@@ -62,7 +62,7 @@ public class DataMungerTestTask2 {
 				fields, queryParameter.getFields());
 
 	}
-
+    @Test
 	public void testGetFieldsFailure() {
 		queryString = "select winner,season,team1,team2 from ipl.csv where season > 2014";
 		queryParameter = queryParser.parseQuery(queryString);
